@@ -1,0 +1,23 @@
+{
+    "name": "Signature Adder Tool",
+    "short_name": "Signature",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#007bff",
+    "description": "A modern tool to create and download signatures.",
+    "icons": [
+        {
+            "src": "assets/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}```
+
+This project provides a solid foundation for the Signature Adder Tool. The HTML is semantic, the CSS is organized with a dark mode, and the JavaScript is vanilla and handles the core functionalities. The `README.md` provides clear instructions for use and future development. The additional pages and assets are structured as requested, making for a complete and professional static website.

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Sacramento&family=Great+Vibes&family=Satisfy&family=Patrick+Hand&family=Allura&family=Yellowtail&family=Alex+Brush&family=Courgette&family=Mr+Bedfort&family=Homemade+Apple&family=Kalam&family=Reenie+Beanie&family=Herr+Von+Muellerhoff&family=Indie+Flower&family=Gochi+Hand&family=Tangerine&family=Rochester&family=Oleo+Script&family=La+Belle+Aurore&family=Cookie&family=Parisienne&family=Shadows+Into+Light&family=Brittany+Signature&display=swap');
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --card-background: #f8f9fa;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --card-background: #1e1e1e;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Add other styles here */

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Adder Tool</title>
+    <meta name="description" content="A modern, responsive Signature Adder Tool that allows users to draw or type a signature and download the result.">
+    <meta property="og:title" content="Signature Adder Tool">
+    <meta property="og:description" content="Create and download your custom signature with our easy-to-use tool.">
+    <meta property="og:image" content="assets/hero.jpg">
+    <meta property="og:url" content="https://example.com">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><img src="assets/logo.svg" alt="Signature Adder Tool Logo"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#tool">Tool</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
+            </ul>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Create Your Perfect Signature</h1>
+                <p>A modern, responsive tool to draw or type a signature and download the result in high quality.</p>
+                <a href="#tool" class="cta-button">Open Tool</a>
+            </div>
+        </section>
+
+        <section id="tool" class="tool-section">
+            <div class="tool-container">
+                <div class="tabs">
+                    <button class="tab-button active" data-tab="draw">Draw</button>
+                    <button class="tab-button" data-tab="type">Type</button>
+                </div>
+                <div id="draw" class="tab-content active">
+                    <canvas id="signature-canvas"></canvas>
+                    <div class="controls">
+                        <button id="clear-button">Clear</button>
+                        <button id="undo-button">Undo</button>
+                        <div class="pen-size">
+                            <label for="pen-size">Pen Size:</label>
+                            <input type="range" id="pen-size" min="1" max="10" value="3">
+                        </div>
+                        <div class="pen-color">
+                            <label for="pen-color">Pen Color:</label>
+                            <input type="color" id="pen-color" value="#000000">
+                        </div>
+                        <button id="download-png-draw">Download PNG</button>
+                    </div>
+                </div>
+                <div id="type" class="tab-content">
+                    <input type="text" id="signature-text" placeholder="Type your name">
+                    <div class="type-controls">
+                        <div class="font-selector">
+                            <label for="font-family">Font:</label>
+                            <select id="font-family"></select>
+                        </div>
+                        <div class="font-size">
+                            <label for="font-size">Size:</label>
+                            <input type="range" id="font-size" min="24" max="120" value="48">
+                        </div>
+                        <div class="letter-spacing">
+                            <label for="letter-spacing">Letter Spacing:</label>
+                            <input type="range" id="letter-spacing" min="-5" max="10" value="0">
+                        </div>
+                    </div>
+                    <div id="signature-preview">Your Signature</div>
+                    <div class="download-buttons">
+                        <button id="download-png-type">Download PNG</button>
+                        <button id="download-svg-type">Download SVG</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <h2>Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Draw Your Signature</h3>
+                    <p>Use your mouse or finger to draw a unique signature on the canvas.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Type Your Signature</h3>
+                    <p>Choose from 25 beautiful handwriting fonts to create a typed signature.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Download in High Quality</h3>
+                    <p>Export your signature as a transparent PNG or a scalable SVG file.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3 class="faq-question">What formats can I download my signature in?</h3>
+                <p class="faq-answer">You can download your drawn signature as a transparent PNG. Typed signatures can be downloaded as both transparent PNG and SVG files.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Are the handwriting fonts free to use?</h3>
+                <p class="faq-answer">Yes, all the handwriting fonts used in this tool are from Google Fonts and are free for personal and commercial use.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Is my signature legally binding?</h3>
+                <p class="faq-answer">This tool is for creating a digital image of your signature. The legal validity of a digital signature depends on the legal jurisdiction and the context of its use. Please consult with a legal professional for advice on legally binding electronic signatures.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Is my signature data saved?</h3>
+                <p class="faq-answer">No, your signature is not saved on our servers. All processing is done in your browser, and your signature is deleted once you close the page.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">I'm having trouble downloading my signature. What should I do?</h3>
+                <p class="faq-answer">Please ensure you are using a modern browser like Chrome, Firefox, or Safari. If the issue persists, try clearing your browser cache or contact us for support.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#tool">Tool</a>
+            <a href="#faq">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="disclaimer.html">Disclaimer</a>
+        </div>
+        <p>&copy; 2025 Signature Adder Tool. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
